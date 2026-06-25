@@ -74,10 +74,10 @@ public class Tabuleiro {
 		listaBrancas.add(cavaloBranco1);
 
 		rainhaBranca.setCor(Xadrez.corBRANCA);
-		rainhaBranca.mover(3, 7);
+		rainhaBranca.mover(4, 7);
 		iRainhaBranca.setIconeBranco(new ImageIcon("imagens/Rainha-Brancas-Branco.png"));
 		iRainhaBranca.setIconeMarrom(new ImageIcon("imagens/Rainha-Brancas-Marrom.png"));
-		iRainhaBranca.mover(3, 7);
+		iRainhaBranca.mover(4, 7);
 		TELA.getContentPane().add(iRainhaBranca.getImagem());
 		listaBrancas.add(rainhaBranca);
 		
