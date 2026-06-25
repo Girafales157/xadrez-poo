@@ -41,6 +41,9 @@ public class Tabuleiro {
 	protected static Rainha rainhaBranca = new Rainha();
 	protected static IRainha iRainhaBranca = new IRainha(rainhaBranca);
 
+	protected static Rainha rainhaPreta = new Rainha();
+	protected static IRainha iRainhaPreta = new IRainha(rainhaPreta);
+	
 
 	
 	//protected static Peca peca = new Peca();
@@ -98,6 +101,15 @@ public class Tabuleiro {
 		iCavaloPreto1.mover(1, 0);
 		TELA.getContentPane().add(iCavaloPreto1.getImagem());
 		listaPretas.add(cavaloPreto1);
+		
+		rainhaPreta.setCor(Xadrez.corPRETA);
+		rainhaPreta.mover(3, 0);
+		iRainhaPreta.setIconeBranco(new ImageIcon("imagens/Rainha-Pretas-Branco.png"));
+		iRainhaPreta.setIconeMarrom(new ImageIcon("imagens/Rainha-Pretas-Marrom.png"));
+		iRainhaPreta.mover(3, 0);
+		TELA.getContentPane().add(iRainhaPreta.getImagem());
+		listaPretas.add(rainhaPreta);
+
 		
 		TELA.getContentPane().add(iTabuleiro.getImagem());
 		TELA.setSize(400, 400);
