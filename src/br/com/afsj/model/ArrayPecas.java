@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class ArrayPecas extends ArrayList<Peca> {
 	
 	Peca pecaPosicao(int x, int y) {
-		// Retorna a Peça que está na posição indicada
-		// Retorna null, caso não haja peças nessa posição
+		// Retorna a Peca que esta na posicao indicada
+		// Retorna null, caso nao haja pecas nessa posicao
 		Peca p;
 		for (int i = 0; i < this.size(); i++) {
 			p = this.get(i);
@@ -17,7 +17,7 @@ public class ArrayPecas extends ArrayList<Peca> {
 	}
 	
 	ArrayPecas pecasParaPosicao(int x, int y) {
-		// Retorna um Array contendo as peças que podem ir a uma dada posição.
+		// Retorna um Array contendo as pecas que podem ir a uma dada posicao.
 		ArrayPecas pRetorno = new ArrayPecas();
 		Peca p;
 		for (int i = 0; i < this.size(); i++) {
@@ -29,8 +29,8 @@ public class ArrayPecas extends ArrayList<Peca> {
 	}
 	
 	boolean posicaoLivreAtaque(int x, int y) {
-		// Retorna true se nenhuma peça pode atacar esta posição
-		// Retorna false se pelo menos uma peça pode atacar a posição
+		// Retorna true se nenhuma peca pode atacar esta posicao
+		// Retorna false se pelo menos uma peca pode atacar a posicao
 		for (int i = 0; i < this.size(); i++) {
 			if (this.get(i).movimentoOK(x, y))
 				return false;
