@@ -6,6 +6,7 @@ import br.com.afsj.control.Xadrez;
 import br.com.afsj.view.ICavalo;
 import br.com.afsj.view.IPeao;
 import br.com.afsj.view.IPeca;
+import br.com.afsj.view.IRainha;
 import br.com.afsj.view.ITabuleiro;
 import br.com.afsj.model.Rainha;
 
@@ -38,7 +39,7 @@ public class Tabuleiro {
 	protected static ICavalo iCavaloBranco1 = new ICavalo(cavaloBranco1);
 
 	protected static Rainha rainhaBranca = new Rainha();
-	protected static IPeca iRainhaBranca = new IPeca(rainhaBranca);
+	protected static IRainha iRainhaBranca = new IRainha(rainhaBranca);
 
 
 	
