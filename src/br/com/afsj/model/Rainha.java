@@ -7,6 +7,7 @@ public class Rainha extends Peca {
         if (posX == -1 && posY == -1) {
             return true;
         }
+        
         int dx = x - posX;
         int dy = y - posY;
 
